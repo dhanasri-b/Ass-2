@@ -1,0 +1,82 @@
+.app{
+display:flex;
+min-height:100vh;
+}
+
+/* sidebar */
+
+.sidebar{
+width:250px;
+background:linear-gradient(
+180deg,
+#ff4ecd,
+#8b5cf6,
+#38bdf8
+);
+padding:20px;
+border-right:2px solid rgba(255,255,255,0.2);
+}
+
+.sidebar h2{
+margin-bottom:25px;
+color:white;
+text-align:center;
+}
+
+.sidebar a{
+display:block;
+padding:14px;
+margin-bottom:10px;
+border-radius:14px;
+background:rgba(255,255,255,0.15);
+transition:0.3s;
+font-weight:500;
+}
+
+.sidebar a:hover,
+.sidebar a.active{
+background:white;
+color:#000;
+}
+
+/* content */
+
+.content{
+flex:1;
+padding:30px;
+}
+
+/* header */
+
+.header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:30px;
+}
+
+/* grids */
+
+.grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:22px;
+}
+
+.two-col{
+display:grid;
+grid-template-columns:1fr 2fr;
+gap:22px;
+}
+
+/* responsive */
+
+@media(max-width:1000px){
+.grid{grid-template-columns:repeat(2,1fr)}
+}
+
+@media(max-width:700px){
+.sidebar{display:none}
+.grid{grid-template-columns:1fr}
+.two-col{grid-template-columns:1fr}
+}

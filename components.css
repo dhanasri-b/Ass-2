@@ -1,0 +1,95 @@
+.card{
+background:linear-gradient(
+135deg,
+rgba(255,255,255,0.18),
+rgba(255,255,255,0.05)
+);
+border:1px solid var(--border);
+border-radius:20px;
+padding:22px;
+backdrop-filter:blur(14px);
+transition:0.4s;
+}
+
+.card:hover{
+transform:translateY(-8px) scale(1.02);
+box-shadow:0 20px 40px rgba(0,0,0,0.6);
+}
+
+/* buttons */
+
+.btn{
+width:100%;
+padding:14px;
+border:none;
+border-radius:14px;
+background:linear-gradient(90deg,var(--primary),var(--secondary));
+color:white;
+font-weight:bold;
+cursor:pointer;
+letter-spacing:0.5px;
+transition:0.3s;
+}
+
+.btn:hover{
+filter:brightness(1.15);
+transform:scale(1.05);
+}
+
+/* inputs */
+
+input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border:none;
+border-radius:12px;
+background:rgba(255,255,255,0.15);
+color:white;
+}
+
+input::placeholder{
+color:#e0e7ff;
+}
+
+input:focus{
+outline:none;
+background:rgba(255,255,255,0.25);
+}
+
+/* avatars */
+
+.avatar{
+border-radius:50%;
+border:3px solid var(--secondary);
+}
+
+/* badges */
+
+.badge{
+padding:6px 14px;
+border-radius:30px;
+font-size:12px;
+display:inline-block;
+margin-top:10px;
+color:black;
+font-weight:bold;
+}
+
+.active{background:#4ade80}
+.complete{background:#60a5fa}
+.pending{background:#facc15}
+
+/* login */
+
+.login-body{
+display:flex;
+justify-content:center;
+align-items:center;
+height:100vh;
+}
+
+.login-card{
+width:360px;
+box-shadow:0 30px 60px rgba(0,0,0,0.7);
+}
